@@ -1,0 +1,63 @@
+name: 问题反馈（中文）
+description: 报告使用 Orqra 时遇到的问题。
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请先搜索已有 Issues。
+        此表单及附件会公开。请勿提交 API Key、Token、License Key、个人资料、私有项目或未脱敏的日志与截图。
+        激活、订单等需要私下处理的问题请联系 support@orqra.com 或 billing@orqra.com；安全漏洞请联系 security@orqra.com。
+  - type: input
+    id: version
+    attributes:
+      label: Orqra 版本
+      description: 请填写发生问题时使用的版本号；无法查看时请说明。
+      placeholder: 版本号
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: 操作系统
+      description: 请提供系统名称、版本，以及处理器架构（如已知）。
+      placeholder: 系统名称与版本
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从哪个页面或操作开始？怎样能再次遇到这个问题？
+      placeholder: |
+        1. 打开……
+        2. 点击……
+        3. 出现……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      description: 你原本希望发生什么？
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 实际发生了什么？如有错误提示，请先移除敏感信息再分享。
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 补充信息（可选）
+      description: 可补充发生频率、临时解决办法或已脱敏的截图。请勿附上私有项目文件或完整原始日志。
+  - type: checkboxes
+    id: public_content
+    attributes:
+      label: 公开内容检查
+      options:
+        - label: 我已检查文字和附件，并移除凭证、License 信息、个人资料和私有项目内容。
+          required: true

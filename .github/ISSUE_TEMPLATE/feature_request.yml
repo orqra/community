@@ -1,0 +1,36 @@
+name: Feature request (English)
+description: Describe your use case and what you would like to improve.
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing requests and add details to an existing discussion when appropriate.
+        This form and its attachments will be public. Do not share API keys, tokens, license keys, personal information, or private project content.
+        Requests help inform product improvements but do not guarantee implementation or a release date.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Use case and difficulty
+      description: What are you trying to accomplish, and where are you having difficulty? Use an example without private content.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: What capability or change to the current workflow would help you?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current approach or other ideas (optional)
+      description: How do you handle this today? What other approaches have you considered?
+  - type: checkboxes
+    id: public_content
+    attributes:
+      label: Public content check
+      options:
+        - label: I have checked the text and attachments and removed credentials, license information, personal information, and private project content.
+          required: true

@@ -1,0 +1,63 @@
+name: Bug report (English)
+description: Report a problem you encountered while using Orqra.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing Issues before posting.
+        This form and its attachments will be public. Do not share API keys, tokens, license keys, personal information, private projects, or unredacted logs and screenshots.
+        For private activation or order support, contact support@orqra.com or billing@orqra.com. Report security vulnerabilities to security@orqra.com.
+  - type: input
+    id: version
+    attributes:
+      label: Orqra version
+      description: Enter the version where the problem occurred, or explain if you cannot find it.
+      placeholder: Version number
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system
+      description: Include the system name, version, and processor architecture if known.
+      placeholder: System name and version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Where did you start, and how can the problem be reproduced?
+      placeholder: |
+        1. Open…
+        2. Click…
+        3. The problem occurs…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: What happened instead? If there is an error message, remove sensitive information before sharing it.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional information (optional)
+      description: Include frequency, workarounds, or screenshots with sensitive information removed. Do not attach private project files or complete raw logs.
+  - type: checkboxes
+    id: public_content
+    attributes:
+      label: Public content check
+      options:
+        - label: I have checked the text and attachments and removed credentials, license information, personal information, and private project content.
+          required: true
