@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
   - name: 产品、下载与激活支持 / Product, download, and activation support
-    url: mailto:support@orqra.com
-    about: 需要私下处理的使用问题，请通过邮件联系。 / Email us for usage questions that need private support.
+    url: https://github.com/orqra/community#private-support
+    about: 产品支持请联系 support@orqra.com，点击查看联系方式。 / Email support@orqra.com for product support; click to view contact details.
   - name: 购买与退款 / Purchases and refunds
-    url: mailto:billing@orqra.com
-    about: 订单、付款与退款请发邮件；勿公开个人或订单资料。 / Email us about orders, payments, or refunds; keep personal and order details private.
+    url: https://github.com/orqra/community#private-support
+    about: 购买与退款请联系 billing@orqra.com，点击查看联系方式。 / Email billing@orqra.com for purchases and refunds; click to view contact details.
   - name: 安全漏洞报告 / Security reports
     url: https://github.com/orqra/community/security/policy
     about: 请按安全说明私下报告漏洞，勿公开细节。 / Follow the security policy to report vulnerabilities privately; do not post details publicly.
